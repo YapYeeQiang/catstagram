@@ -1,0 +1,9 @@
+.profile__img {
+	border-radius: 50%;
+	padding: 20px;
+	transition: all 0.2s;
+}
+
+.profile__img:hover {
+	transform: scale(1.2);
+}
