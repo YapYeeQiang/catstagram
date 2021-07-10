@@ -1,15 +1,11 @@
 import { Link } from "react-router-dom";
 import { Card, Col, Button } from "react-bootstrap";
+import "./FeedCard.css";
 
 function FeedCard({ id, breed }) {
 	return (
-		<Col sm={4} style={{ marginBottom: "50px" }}>
-			<Card
-				style={{
-					width: "100%",
-					marginBottom: "20px",
-					height: "100%",
-				}}>
+		<Col sm={4} className="feedCard__col">
+			<Card className="feedCard__card">
 				<Card.Img
 					variant="top"
 					src={breed.image.url}
@@ -20,11 +16,9 @@ function FeedCard({ id, breed }) {
 					<Card.Title>{breed.name}</Card.Title>
 					<Card.Text>{breed.description}</Card.Text>
 				</Card.Body>
-				<Button variant="dark">
-					<Link to={`/profile/${id}`} style={{ color: "white" }}>
-						Profile
-					</Link>
-				</Button>
+				<Link to={`/profile/${id}`} className="feedCard__link">
+					<Button variant="dark">Profile</Button>
+				</Link>
 			</Card>
 		</Col>
 	);

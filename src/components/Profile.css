@@ -1,9 +1,53 @@
+.profile {
+	width: 100%;
+}
+
+.profile__header {
+	display: flex;
+	justify-content: space-between;
+}
+
+.profile__header > input {
+	outline: none;
+	height: 40px;
+}
+
+.profile__button {
+	background-color: #343a40;
+	border: 1px solid #343a40;
+	border-radius: 2px;
+	font-size: 18px;
+	margin-left: 3px;
+}
+
+.profile__button:hover {
+	background-color: black;
+}
+
+.profile__card {
+	display: flex;
+	flex-direction: row;
+	margin: 20px;
+	transition: all 0.5s;
+}
+
+.profile__card:hover {
+	-webkit-box-shadow: 3px 3px 5px 6px #ccc;
+	-moz-box-shadow: 3px 3px 5px 6px #ccc;
+	box-shadow: 3px 3px 5px 6px #ccc;
+	transform: translateY(10px);
+}
+
+.profile__images {
+	display: flex;
+	flex-direction: column;
+}
+
 .profile__img {
-	border-radius: 50%;
 	padding: 20px;
-	transition: all 0.2s;
+	transition: all 0.5s;
 }
 
 .profile__img:hover {
-	transform: scale(1.2);
+	transform: scale(1.1);
 }
